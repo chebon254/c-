@@ -1,0 +1,100 @@
+// Online C# Editor for free
+
+// Write, Edit and Run your C# code using C# Online Compiler
+
+
+
+using System;
+
+using System.IO;
+
+using System.Collections;
+
+using System.Collections.Generic;
+
+using System.Text;
+
+using System.Numerics;
+
+
+
+public class HelloWorld
+
+{
+
+    public static void Main(string[] args)
+
+    {
+
+        // Write a program that creates an array of 5 integers. The program should then create a List, a Queue and a Stack and copy the elements from the array to each of the other data structures.
+
+        
+
+        int[] numbers = { 1, 2, 3, 5, 6};
+
+ 	 
+
+          for(int i=0; i < numbers.Length; i++) {
+
+            Console.WriteLine("Number: " + numbers[i] + "\n");
+
+          }
+
+     
+
+        // Spacer
+
+        Console.Write("\n\n\n");
+
+ 
+        
+
+        // List
+
+        List<int> list = new List<int>(numbers);
+
+        
+
+        foreach(int num in list) {
+
+            Console.WriteLine("List: " + num + "\n");
+
+         }
+
+        
+
+        // Spacer
+
+        Console.Write("\n\n\n\n");
+
+        
+
+        // Queue
+
+        Queue<int> callerIds = new Queue<int>(numbers);
+
+        foreach(var id in callerIds){
+
+            Console.Write("Queue: "+ id + "\n");
+
+        } 
+
+
+        // Spacer
+
+        Console.Write("\n\n\n\n");
+
+
+        // Stack
+
+        Stack<int> myStack = new Stack<int>(numbers);
+
+        foreach (var item in myStack){
+
+             Console.Write("Stack: " + item + "\n");
+
+        } 
+
+    }
+
+}
